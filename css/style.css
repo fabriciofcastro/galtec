@@ -55,8 +55,7 @@ header {
 .header-menu ul li {
     display: inline-block;
     border: 1px solid;
-    height: 10rem ;
-    width: 18rem;
+    height: 10rem;
 }
 
 .header-menu ul li a {
@@ -69,4 +68,12 @@ header {
     position: relative;
     color: #000000;
     top: 2rem;    
+}
+
+.read-more a {
+    display: block;
+    width: 10rem;
+    height: 5rem;
+    background-color: #f5b400;
+    border-radius: .5rem;
 }
