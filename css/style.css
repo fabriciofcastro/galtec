@@ -31,6 +31,8 @@ header {
     background-color: #ffffff;
     margin-top: 3rem;
     height: 10rem;
+    position: relative;
+    z-index: 1;
 }
 
 .menu-nav nav {
@@ -54,7 +56,7 @@ header {
 
 .header-menu ul li {
     display: inline-block;
-    border: 1px solid;
+    
     height: 10rem;
 }
 
@@ -64,16 +66,75 @@ header {
     font-size: 1.3rem;
     display: block;
     padding: 2rem 3.2rem 4.3rem 2rem;
-    background-color: #f5b400;
     position: relative;
     color: #000000;
-    top: 2rem;    
+    top: 2.1rem;    
+}
+
+.header-menu ul li a:hover {
+    background-color: #fd783a;
+    transition: .5s;
+    color: #ffffff;
+}
+
+.header-menu .somos {
+    background-color: #fd783a;
+    color: #ffffff;
+}
+
+.read-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20.15rem;
+    height: 5.9rem;
+    background-color: #fd783a;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .read-more a {
-    display: block;
-    width: 10rem;
-    height: 5rem;
-    background-color: #f5b400;
-    border-radius: .5rem;
+    font-size: 1.7rem;
+    font-family: var(--font-primary);
+    color: #ffffff;
+    padding: 2rem 4.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.read-more::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.read-more:hover::before {
+    width: 100%;
+    background-color: #1e06a5;
+    transition: width 1s;
+        
+}
+
+.fa-circle-arrow-right {
+    margin-left: 1.2rem;
+    position: relative;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}   
+
+.line-menu {
+    width: 97%;
+    height: 10rem;
+    border: .3rem solid #ffffff;
+    position: absolute;
+    top: 1.5rem;
+    left: 2.8rem;
+    z-index: -1;
 }
