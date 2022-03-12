@@ -1,5 +1,7 @@
-@use 'root';
-@use 'reset'; 
+@import 'reset';
+@import 'root';
+
+$text-color: #b4d10e;
 
 header {
     width: 100%;
