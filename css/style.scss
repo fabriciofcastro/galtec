@@ -78,7 +78,10 @@ header {
         background-color: #fd783a;
         color: #ffffff;
     }
-    
+
+    /*
+    ------------  BOTÃO INSTITUCIONAL  ----------
+    */
     .read-more {
         display: flex;
         justify-content: center;
@@ -89,6 +92,7 @@ header {
         border-radius: 1rem;
         overflow: hidden;
         position: relative;
+
     }
 
     .read-more a {
@@ -99,6 +103,7 @@ header {
         cursor: pointer;
         position: relative;
         z-index: 2;
+
     }
     
     .read-more::before {
@@ -112,13 +117,13 @@ header {
         transition: all 1.5s ease;
     }
     
-    .read-more:hover::before {
+    .read-more:hover::before  {
         width: 100%;
         background-color: #1e06a5;
         transition: width 1s;
-        
     }
-    
+
+
     .fa-circle-arrow-right {
         margin-left: 1.2rem;
         position: relative;
@@ -158,11 +163,42 @@ header {
                 background-color: #7e7e7ec1;
                 width: 70rem;
             }
+
+    }
+
+    /*
+        ----------- C A R D S  ---------------
+    */
+
+    .content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+    
+
+            .card {
+                width: 28rem;
+                height: 40rem;
+                margin: 3rem;
+                background-color: #fd783a;
+                box-shadow: 2rem 2rem 5rem rgba(0, 0 , 0, .5);
+                border-radius: 1.5rem;
+                overflow: hidden;
+                display: flex;
+                top: 5rem;
+            }
+            
     }
 
     
-    
+
 } 
+
+@mixin animationTop {
+    
+}
  
 /*
     *******  

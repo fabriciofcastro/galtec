@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
 * {
   padding: 0;
@@ -32,6 +33,12 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  /*
+    ------------  BOTÃO INSTITUCIONAL  ----------
+    */
+  /*
+        ----------- C A R D S  ---------------
+    */
 }
 
 header .bg-header img {
@@ -202,6 +209,34 @@ header .text-header p {
   line-height: 6rem;
   background-color: #7e7e7ec1;
   width: 70rem;
+}
+
+header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .content .card {
+  width: 28rem;
+  height: 40rem;
+  margin: 3rem;
+  background-color: #fd783a;
+  -webkit-box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 5rem;
 }
 
 /*
