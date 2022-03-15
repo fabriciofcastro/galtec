@@ -1,5 +1,5 @@
-@import 'reset';
-@import 'root';
+@import './reset';
+@import './root';
 
 $text-color: #b4d10e;
 
@@ -181,24 +181,84 @@ header {
             .card {
                 width: 28rem;
                 height: 40rem;
-                margin: 3rem;
+                margin: 13rem 3rem 3rem 3rem;
                 background-color: #fd783a;
                 box-shadow: 2rem 2rem 5rem rgba(0, 0 , 0, .5);
                 border-radius: 1.5rem;
                 overflow: hidden;
                 display: flex;
-                top: 5rem;
+                border-top: .2rem solid rgba(255, 255, 255, .5);
+                border-left: .2rem solid rgba(255, 255, 255, .5);
             }
             
+            .content-card {
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transform: translatey(10rem);
+                opacity: 0;
+                transition: .5s;
+
+            }
+
+            .card:hover .content-card {
+                transform: translatey(0);
+                opacity: 1;
+            }
+
+            .content-card h2 {
+                position: absolute;
+                top: .1rem;
+                right: 2rem;
+                font-size: 15rem;
+                color: rgba(224, 224, 224, 0.2);
+                pointer-events: none;
+                
+            }
+
+            .content-card h3 {
+                font-size: 3rem;
+                color: #ffffff;
+                z-index: 1;
+                margin: 3rem 0 2rem 0;
+                
+            }
+            
+
+            .content-card p {
+                color: #ffffff;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 1.8rem;
+                margin-bottom: 3rem;
+           }
+
+           .content-card a {
+               position: relative;
+               display: inline-block;
+               padding: 1.4rem;
+               margin-top: 1.5rem;
+               background-color: #ffffff;
+               color: #000000;
+               width: 18rem;
+               text-align: center;
+               border-radius: .5rem;
+               font-size: 1.7rem;
+               box-shadow: .8rem .8rem 1rem #c0c0c0;
+           }
+
+           .content-card a:hover {
+               background-color: #fbf5f2;
+               box-shadow: .8rem .8rem 1rem #c0c0c0;
+           }
+
     }
 
-    
 
 } 
 
-@mixin animationTop {
-    
-}
  
 /*
     *******  
