@@ -176,7 +176,8 @@ header {
         width: 100%;
         position: relative;
         flex-wrap: wrap;
-    
+
+
 
             .card {
                 width: 28rem;
@@ -190,6 +191,37 @@ header {
                 border-top: .2rem solid rgba(255, 255, 255, .5);
                 border-left: .2rem solid rgba(255, 255, 255, .5);
             }
+
+ /*
+     ---------- TEXTO INICIAL FIXO  -----------------
+ */
+
+            .content-card-fixad {
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: absolute;
+                z-index: 5;
+            }
+
+            .card-ficad:hover .content-card-fixad  {
+                opacity: 0;
+            }
+
+
+            .content-card-fixad h5 {
+               
+
+            }
+
+
+
+/*
+  -------------  TEXTO EFEITO HOVER  -------------------
+*/
+    
             
             .content-card {
                 padding: 2rem;
@@ -244,14 +276,21 @@ header {
                color: #000000;
                width: 18rem;
                text-align: center;
-               border-radius: .5rem;
+               border-radius: .8rem;
                font-size: 1.7rem;
-               box-shadow: .8rem .8rem 1rem #c0c0c0;
+               box-shadow: .5rem .5rem .5rem rgba(192, 192, 192, .5);
+              
            }
 
            .content-card a:hover {
                background-color: #fbf5f2;
-               box-shadow: .8rem .8rem 1rem #c0c0c0;
+              
+           }
+
+           .content-card a:active {
+               position: relative;
+               top: .3rem;
+               
            }
 
     }
@@ -261,5 +300,5 @@ header {
 
  
 /*
-    *******  
+    ******* 
 */

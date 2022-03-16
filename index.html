@@ -98,8 +98,19 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="content-card">
+                    <div class="card-fixad card">
+                        <div class="content-card-fixad">
+                            <h1>01</h1>
+                            <h4>Card Um</h4>
+                            <h5>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat culpa, ratione laboriosam tenetur aperiam fugit 
+                                nihil, dignissimos repudiandae suscipit voluptatibus dicta 
+                                fugiat sit dolore quam magnam numquam assumenda molestias 
+                                ea.
+                            </h5>
+                        </div>
+                            <div class="content-card">
                             <h2>01</h2>
                             <h3>Card Um</h3>
                             <p>
@@ -123,7 +134,15 @@
 
     </div>
 
-    <script src=""></script>
+    <script src="./js/vanilla-tilt.js" type="text/javascript"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": .4
+        });
+    </script>
 </body>
 
 </html>
