@@ -1,7 +1,10 @@
 @import './reset';
 @import './root';
 
-$text-color: #b4d10e;
+#container {
+    
+
+}
 
 header {
     width: 100%;
@@ -138,12 +141,12 @@ header {
         border: .3rem solid #ffffff;
         position: absolute;
         top: 1.5rem;
-        left: 2.8rem;
+        left: 2.6rem;
         z-index: -1;
     }
 
     .text-header {
-        margin-top: 20rem;
+        margin-top: 12rem;
         height: auto;
 
             h1 {
@@ -161,7 +164,7 @@ header {
                 color: #ffffff;
                 line-height: 6rem;
                 background-color: #7e7e7ec1;
-                width: 70rem;
+                width: 100rem;
             }
 
     }
@@ -196,7 +199,7 @@ header {
      ---------- TEXTO INICIAL FIXO  -----------------
  */
 
-            .content-card-fixad {
+            .content-card-fixed {
                 padding: 2rem;
                 display: flex;
                 justify-content: center;
@@ -204,20 +207,16 @@ header {
                 flex-direction: column;
                 position: absolute;
                 z-index: 5;
-            }
+                opacity: 1;
 
-            .card-ficad:hover .content-card-fixad  {
-                opacity: 0;
-            }
-
-
-            .content-card-fixad h5 {
-               
+                .card-hover-fixed .content-card-fixed {
+                    transform: translatey(0);
+                    opacity: 0;
+                }
 
             }
 
-
-
+            
 /*
   -------------  TEXTO EFEITO HOVER  -------------------
 */
@@ -232,15 +231,17 @@ header {
                 transform: translatey(10rem);
                 opacity: 0;
                 transition: .5s;
+                position: relative;
+                z-index: 1;
 
             }
 
-            .card:hover .content-card {
-                transform: translatey(0);
-                opacity: 1;
-            }
+                .card-hover .content-card {
+                    transform: translatey(0);
+                    opacity: 1;
+                }
 
-            .content-card h2 {
+            .content-card .h2 {
                 position: absolute;
                 top: .1rem;
                 right: 2rem;
@@ -250,7 +251,7 @@ header {
                 
             }
 
-            .content-card h3 {
+            .content-card .h3 {
                 font-size: 3rem;
                 color: #ffffff;
                 z-index: 1;
@@ -259,7 +260,7 @@ header {
             }
             
 
-            .content-card p {
+            .content-card .p {
                 color: #ffffff;
                 font-size: 1.5rem;
                 font-weight: 300;
@@ -300,5 +301,10 @@ header {
 
  
 /*
-    ******* 
+    ***************** M A I N *****************
 */
+
+#main {
+    height: 100vh;
+   position: relative;
+}

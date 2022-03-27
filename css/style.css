@@ -1,34 +1,29 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
-/* line 1, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/_reset.scss */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* line 7, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/_reset.scss */
 ul, li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 13, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/_reset.scss */
 a {
   text-decoration: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 3, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/_root.scss */
 :root {
   font-size: 62.5%;
   --font-primary: Inter
 ;
 }
 
-/* line 6, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header {
   width: 100%;
   height: 100vh;
@@ -45,7 +40,6 @@ header {
     */
 }
 
-/* line 15, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .bg-header img {
   width: 100%;
   height: 100%;
@@ -57,7 +51,6 @@ header .bg-header img {
   left: 0;
 }
 
-/* line 25, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .menu-nav {
   width: 90%;
   margin: 0 auto;
@@ -68,7 +61,6 @@ header .menu-nav {
   z-index: 1;
 }
 
-/* line 34, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .menu-nav nav {
   display: flex;
   align-items: center;
@@ -76,27 +68,23 @@ header .menu-nav nav {
   height: 100%;
 }
 
-/* line 41, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* line 47, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .logo p {
   font-size: 2.5rem;
   font-family: var(--font-primary);
   font-weight: bold;
 }
 
-/* line 53, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .header-menu ul li {
   display: inline-block;
   height: 10rem;
 }
 
-/* line 59, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .header-menu ul li a {
   font-family: var(--font-primary);
   font-weight: 700;
@@ -108,7 +96,6 @@ header .header-menu ul li a {
   top: 2.1rem;
 }
 
-/* line 70, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .header-menu ul li a:hover {
   background-color: #fd783a;
   transition: transform 1s;
@@ -116,13 +103,11 @@ header .header-menu ul li a:hover {
   color: #ffffff;
 }
 
-/* line 77, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .header-menu .somos {
   background-color: #fd783a;
   color: #ffffff;
 }
 
-/* line 85, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .read-more {
   display: flex;
   justify-content: center;
@@ -135,7 +120,6 @@ header .read-more {
   position: relative;
 }
 
-/* line 98, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .read-more a {
   font-size: 1.7rem;
   font-family: var(--font-primary);
@@ -146,7 +130,6 @@ header .read-more a {
   z-index: 2;
 }
 
-/* line 109, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .read-more::before {
   content: "";
   width: 0;
@@ -158,14 +141,12 @@ header .read-more::before {
   transition: all 1.5s ease;
 }
 
-/* line 120, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .read-more:hover::before {
   width: 100%;
   background-color: #1e06a5;
   transition: width 1s;
 }
 
-/* line 127, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .fa-circle-arrow-right {
   margin-left: 1.2rem;
   position: relative;
@@ -174,31 +155,27 @@ header .fa-circle-arrow-right {
   left: 0;
 }
 
-/* line 135, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .line-menu {
   width: 97%;
   height: 10rem;
   border: .3rem solid #ffffff;
   position: absolute;
   top: 1.5rem;
-  left: 2.8rem;
+  left: 2.6rem;
   z-index: -1;
 }
 
-/* line 145, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .text-header {
-  margin-top: 20rem;
+  margin-top: 12rem;
   height: auto;
 }
 
-/* line 149, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .text-header h1 {
   font-size: 5rem;
   font-family: var(--font-primary);
   color: #ffffff;
 }
 
-/* line 155, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .text-header p {
   margin: auto;
   text-align: center;
@@ -208,10 +185,9 @@ header .text-header p {
   color: #ffffff;
   line-height: 6rem;
   background-color: #7e7e7ec1;
-  width: 70rem;
+  width: 100rem;
 }
 
-/* line 173, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .content {
   display: flex;
   justify-content: center;
@@ -226,7 +202,6 @@ header .content {
 */
 }
 
-/* line 182, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .content .card {
   width: 28rem;
   height: 40rem;
@@ -240,8 +215,7 @@ header .content .card {
   border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
 }
 
-/* line 199, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
-header .content .content-card-fixad {
+header .content .content-card-fixed {
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -249,14 +223,14 @@ header .content .content-card-fixad {
   flex-direction: column;
   position: absolute;
   z-index: 5;
+  opacity: 1;
 }
 
-/* line 209, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
-header .content .card-ficad:hover .content-card-fixad {
+header .content .content-card-fixed .card-hover-fixed .content-card-fixed {
+  transform: translatey(0);
   opacity: 0;
 }
 
-/* line 226, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .content .content-card {
   padding: 2rem;
   display: flex;
@@ -266,16 +240,16 @@ header .content .content-card {
   transform: translatey(10rem);
   opacity: 0;
   transition: .5s;
+  position: relative;
+  z-index: 1;
 }
 
-/* line 238, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
-header .content .card:hover .content-card {
+header .content .card-hover .content-card {
   transform: translatey(0);
   opacity: 1;
 }
 
-/* line 243, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
-header .content .content-card h2 {
+header .content .content-card .h2 {
   position: absolute;
   top: .1rem;
   right: 2rem;
@@ -284,16 +258,14 @@ header .content .content-card h2 {
   pointer-events: none;
 }
 
-/* line 253, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
-header .content .content-card h3 {
+header .content .content-card .h3 {
   font-size: 3rem;
   color: #ffffff;
   z-index: 1;
   margin: 3rem 0 2rem 0;
 }
 
-/* line 262, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
-header .content .content-card p {
+header .content .content-card .p {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 300;
@@ -301,7 +273,6 @@ header .content .content-card p {
   margin-bottom: 3rem;
 }
 
-/* line 270, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .content .content-card a {
   position: relative;
   display: inline-block;
@@ -316,19 +287,19 @@ header .content .content-card a {
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(192, 192, 192, 0.5);
 }
 
-/* line 285, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .content .content-card a:hover {
   background-color: #fbf5f2;
 }
 
-/* line 290, ../Users/Fabricio/Desktop/Galtec/galtec/css/sass/style.scss */
 header .content .content-card a:active {
   position: relative;
   top: .3rem;
 }
 
 /*
-    ******* 
+    ***************** M A I N *****************
 */
-
-/*# sourceMappingURL=style.css.map */
+#main {
+  height: 100vh;
+  position: relative;
+}
